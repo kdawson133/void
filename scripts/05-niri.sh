@@ -13,10 +13,13 @@ sudo xbps-install -Su
 sudo xbps-install vim neovim dbus elogind polkit xorg xorg-fonts xorg-input-drivers NetworkManager bluez pipewire alsa-pipewire wireplumber greetd tuigreet xdg-user-dirs unzip gzip xz 7zip
 
 # Install CLI tools
-sudo xbps-install wl-clipboard xsel xclip nodejs bat eza base-devel helix starship zsh stow fd ripgrep fzf zoxide
+sudo xbps-install curl wget wl-clipboard xsel xclip nodejs bat eza base-devel helix starship zsh stow fd ripgrep fzf zoxide
 
 # Install Desktop Packages
 sudo xbps-install niri noctalia fuzzel alacritty nvidia 
+
+# Install Fonts
+sudo xbps-install font-Hasklig nerd-fonts-otf nerd-fonts-symbols-ttf
 
 # Add Services
 sudo ln -s /etc/sv/gdm /var/service
