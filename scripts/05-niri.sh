@@ -10,7 +10,7 @@ echo "repository=https://repo.voiders.dev" | sudo tee /etc/xbps.d/10-voiders-com
 sudo xbps-install -Su
 
 # Install Main packages
-sudo xbps-install vim neovim dbus elogind polkit xorg xorg-fonts xorg-input-drivers NetworkManager bluez pipewire alsa-pipewire wireplumber greetd tuigreet xdg-user-dirs unzip gzip xz 7zip
+sudo xbps-install vim neovim dbus elogind polkit xorg xorg-fonts xorg-input-drivers NetworkManager bluez pipewire alsa-pipewire wireplumber greetd tuigreet ddcutil xdg-user-dirs unzip gzip xz 7zip
 
 # Install CLI tools
 sudo xbps-install curl wget wl-clipboard xsel xclip nodejs bat eza base-devel helix starship zsh stow fd ripgrep fzf zoxide
