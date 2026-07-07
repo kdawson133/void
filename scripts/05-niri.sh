@@ -13,7 +13,7 @@ sudo xbps-install -Su
 sudo xbps-install vim neovim dbus elogind polkit xorg xorg-fonts xorg-input-drivers NetworkManager pipewire alsa-pipewire wireplumber xdg-user-dirs unzip gzip xz 7zip
 
 # Install CLI tools
-sudo xbps-install wl-clipboard xsel xclip nodejs bat eza git base-devel helix starship zsh
+sudo xbps-install wl-clipboard xsel xclip nodejs bat eza git base-devel helix starship zsh stow fd ripgrep fzf zoxide
 
 # Install Desktop Packages
 sudo xbps-install niri noctalia fuzzel alacritty 
