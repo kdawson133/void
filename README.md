@@ -1,13 +1,10 @@
 # void
 Setup scripts post void install to install the the following;
 
-- Gnome
+- Niri
 
 - Network Manager
 
 - Pipewire
 
 - Steam
-
-- Distrobox
-
