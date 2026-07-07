@@ -16,7 +16,7 @@ sudo xbps-install vim neovim dbus elogind polkit xorg xorg-fonts xorg-input-driv
 sudo xbps-install wl-clipboard xsel xclip nodejs bat eza base-devel helix starship zsh stow fd ripgrep fzf zoxide
 
 # Install Desktop Packages
-sudo xbps-install niri noctalia fuzzel alacritty 
+sudo xbps-install niri noctalia fuzzel alacritty nvidia 
 
 # Add Services
 sudo ln -s /etc/sv/gdm /var/service
