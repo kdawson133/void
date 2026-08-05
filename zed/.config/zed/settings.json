@@ -1,0 +1,110 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+	"hard_tabs": true,
+	"outline_panel": {
+		"dock": "left",
+	},
+	"collaboration_panel": {
+		"dock": "left",
+	},
+	"agent": {
+		"dock": "right",
+		"favorite_models": [],
+		"model_parameters": [],
+	},
+	"git_panel": {
+		"dock": "left",
+	},
+	"tab_bar": {
+		"show": true,
+		"show_nav_history_buttons": false,
+	},
+	"tabs": {
+		"file_icons": true,
+		"git_status": true,
+	},
+	"tab_size": 2,
+	"git": {
+		"git_gutter": "tracked_files",
+		"inline_blame": {
+			"enabled": true,
+		},
+	},
+	"icon_theme": "Zed (Default)",
+	"vim_mode": true,
+	"show_edit_predictions": false,
+	"ui_font_family": "Hasklig",
+	"ui_font_fallbacks": ["Symbols Nerd Font Mono"],
+	"buffer_font_family": "Hasklig",
+	"buffer_font_fallbacks": ["Symbols Nerd Font Mono"],
+	"ui_font_size": 20.0,
+	"buffer_font_size": 20.0,
+	"project_panel": {
+		"dock": "left",
+		"indent_size": 16,
+	},
+	"preferred_line_length": 160,
+	"terminal": {
+		"dock": "left",
+		"font_family": "Hasklig",
+		"font_fallbacks": ["Symbols Nerd Font Mono"],
+	},
+	"theme": {
+		"mode": "dark",
+		"light": "Tokyo Night Storm",
+		"dark": "Tokyo Night",
+	},
+	"telemetry": {
+		"metrics": false,
+		"diagnostics": false,
+	},
+	"language_models": {
+		"ollama": {
+			"api_url": "http://192.168.113.10:11434",
+			"available_models": [
+				{
+					"name": "axel",
+					"description": "A model based on llama3.2",
+					"max_tokens": 32768,
+				},
+				{
+					"name": "beau",
+					"description": "A model based on mistral-nemo",
+					"max_tokens": 32768,
+				},
+				{
+					"name": "cody",
+					"description": "A model based on phi4",
+					"max_tokens": 32768,
+				},
+				{
+					"name": "dean",
+					"description": "A model based on qwen2",
+					"max_tokens": 32768,
+				},
+				{
+					"name": "enzo",
+					"description": "A model based on hermes3",
+					"max_tokens": 32768,
+				},
+				{
+					"name": "fred",
+					"description": "A model based on deepseek-r1",
+					"max_tokens": 32768,
+				},
+				{
+					"name": "gene",
+					"description": "A model based on llava",
+					"max_tokens": 32768,
+				},
+			],
+		},
+	},
+}

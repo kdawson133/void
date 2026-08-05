@@ -1,0 +1,46 @@
+theme = "tokyonight-transparent"
+
+[editor]
+line-number = "absolute"
+cursorline = true
+cursorcolumn = true
+scrolloff = 5
+auto-completion = true
+path-completion = true
+auto-format = true
+rulers = [120]
+true-color = true
+end-of-line-diagnostics = "hint"
+
+gutters = [
+  "diagnostics",
+  "spacer",
+  "line-numbers",
+  "spacer",
+  "diff",
+]
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.indent-guides]
+character = "┊"
+render = true
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+mode.normal = "NORMAL 󰢻"
+mode.insert = "INSERT 󰢻"
+mode.select = "SELECT 󰢻"
+
+[editor.lsp]
+auto-signature-help = false
+display-messages = true
+
+[editor.inline-diagnostics]
+cursor-line = "error"
+other-lines = "disable"

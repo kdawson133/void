@@ -1,0 +1,7 @@
+[user]
+	name = kdawson133
+	email = kdawson133@startmail.com
+[init]
+	defaultBranch = prime
+[pull]
+	rebase = false

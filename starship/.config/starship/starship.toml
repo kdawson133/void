@@ -1,0 +1,81 @@
+format = """
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$line_break\
+$character"""
+
+right_format = """
+$cmd_duration
+$python
+$jobs
+$hostname
+"""
+
+palette = "tokyonight"
+
+add_newline = false
+command_timeout = 1000
+scan_timeout = 10000
+[fill]
+symbol = " "
+
+[directory]
+style = "heavenly-blue"
+
+[character]
+success_symbol = "[❯](bright-lavender)"
+error_symbol = "[❯](camelia)"
+vimcmd_symbol = "[❮](easter-green)"
+
+[git_branch]
+format = "[ $branch]($style)"
+style = "neutral-orange"
+
+[git_status]
+format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
+style = "camelia"
+conflicted = "​"
+untracked = "​"
+modified = "​"
+staged = "​"
+renamed = "​"
+deleted = "​"
+stashed = "≡"
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "lavender"
+
+[cmd_duration]
+format = "[$duration]($style) "
+style = "neutral-orange"
+
+[python]
+symbol = '󰌠'
+style = "easter-green"
+format = "[$symbol $virtualenv]($style) "
+
+[jobs]
+symbol = ' '
+style = 'camelia'
+number_threshold = 1
+format = '[$symbol]($style)'
+
+[hostname]
+ssh_only = false
+format =  "[@$hostname ](heavenly-blue)"
+trim_at = ".deneb.group"
+disabled = false
+
+[palettes.tokyonight]
+black-denim = "#1b1a26"
+gunmetal-black = "#15161e"
+camelia = "#f6768f"
+easter-green = "#9ecf6b"
+neutral-orange = "#e0ae69"
+heavenly-blue = "#7aa3f6"
+bright-lavender = "#ba9af6"
+light-sky = "#7dcfff"
+isabelle = "#a9b1d6"

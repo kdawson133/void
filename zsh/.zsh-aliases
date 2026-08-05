@@ -1,0 +1,96 @@
+# NOTE: Aliases for ZSH
+
+# Listing using LS
+# alias ls='ls --color=auto'
+# alias ll='ls -lah --color=auto'
+# alias ld='ls -d */'
+# alias l.='ls -a --color=auto'
+
+# Lising using EZA
+alias ls='eza --icons'
+alias ll='eza -la --icons'
+alias ld='eza -D --icons'
+alias l.='eza -a --icons' 
+
+# Tree
+alias tree='tree -a'
+
+# Safety
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
+
+# Git
+alias gst='git status'
+alias ga='git add'
+alias gau='git add -u'
+alias gaa='git add --all'
+alias gcm='git commit -m'
+alias gcu='git commit -m "updated"'
+alias gca='git commit -m "added"'
+alias gcd='git commit -m "deleted"'
+alias gl='git pull'
+alias gp='git push'
+alias gi='git init'
+alias gc='git clone'
+alias gbr='git branch'
+alias gco='git checkout'
+alias grr='git remote rm'
+alias gra='git remote add'
+alias glog='git log'
+alias grsu='git remote set-url --add --push'
+alias gr='git restore'
+alias gd='git diff'
+alias lg='lazygit'
+
+#NOTE: printout Repo Details - rd
+alias rd='bat .git/config'
+
+# Terminal
+alias :c='clear'
+alias :q='exit'
+alias :='clear && cd $HOME'
+alias up='cd ..'
+alias upup='cd ../..'
+alias upupup='cd ../../..'
+
+# Misc 
+alias z='cd'
+alias lvim='NVIM_APPNAME=lazyvim nvim'
+alias vim='nvim'
+alias vimf='nvim $(fzf)'
+alias cdf='z $(fzf)'
+alias mkdir='mkdir -p'
+
+# yt-dlp
+alias ydl='yt-dlp'
+alias ydlmp4='yt-dlp -f "bestvideo[ext=mp4][vcodec^=avc]+bestaudio[ext=m4a]/best[ext=mp4]/best"'
+alias ydlmkv='yt-dlp -f "bestvideo[ext=mkv]+bestaudio[ext=mkv]/best[ext=mkv]/best"'
+alias ydlmp3='yt-dlp -t mp3'
+
+# Python Virtual Environment
+if [[ -d "$HOME/.venv" ]]; then
+  alias pyon='source $HOME/.venv/bin/activate'
+  alias pyoff='deactivate'
+fi
+
+# NOTE: Update
+OS=$(uname)
+if [[ $OS == 'Darwin' ]]; then
+  alias update="brew update && brew upgrade --no-ask --greedy"
+elif [[ $OS == 'Linux' ]]; then
+  DISTRO=$(lsb_release -is)
+  if [[ $DISTRO == 'Ubuntu' ]]; then
+    alias update="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
+  elif [[ $DISTRO == 'Pop' ]]; then
+    alias update="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
+  elif [[ $DISTRO == 'Debian' ]]; then
+    alias update="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
+  elif [[ $DISTRO == 'Arch' ]]; then
+    alias update="sudo pacman -Syu --noconfirm"
+    alias autoremove="sudo pacman -R $(pacman -Qdtq)"
+  elif [[ $DISTRO == 'cachyos' ]]; then
+    alias update="sudo pacman -Syu --noconfirm"
+    alias autoremove="sudo pacman -Syu --noconfirm"
+  fi
+fi
