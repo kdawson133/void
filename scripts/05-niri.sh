@@ -22,11 +22,12 @@ sudo xbps-install niri noctalia-shell fuzzel alacritty nvidia gnome-keyring polk
 sudo xbps-install font-Hasklig nerd-fonts-otf nerd-fonts-symbols-ttf
 
 # Add Services
-sudo ln -s /etc/sv/gdm /var/service
+#sudo ln -s /etc/sv/gdm /var/service
 sudo ln -s /etc/sv/NetworkManager /var/service
 sudo ln -s /etc/sv/dbus /var/service
 sudo ln -s /etc/sv/polkitd /var/service
 sudo ln -s /etc/sv/bluetoothd /var/service
+sudo ln -s /etc/sv/elogind /varservice
 
 # Configure Pipewire
 sudo mkdir -p /etc/xdg/autostart
@@ -39,4 +40,6 @@ sudo ln -sf /usr/share/alsa/alsa.conf.d/50-pipewire.conf /etc/alsa/conf.d
 sudo ln -sf /usr/share/alsa/alsa.conf.d/99-pipewire-default.conf /etc/alsa/conf.d
 
 
+# Configure User Dirs
+xdg-user-dirs-update
 
