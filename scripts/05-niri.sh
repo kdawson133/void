@@ -16,7 +16,7 @@ sudo xbps-install vim neovim dbus elogind polkit xorg xorg-fonts xorg-input-driv
 sudo xbps-install curl wget wl-clipboard xsel xclip nodejs bat eza base-devel helix starship zsh stow fd ripgrep fzf zoxide
 
 # Install Desktop Packages
-sudo xbps-install niri noctalia-shell fuzzel alacritty nvidia gnome-keyring polkit-gnome 
+sudo xbps-install niri noctalia-shell fuzzel alacritty nvidia gnome-keyring polkit-gnome fastfetch firefox 
 
 # Install Fonts
 sudo xbps-install font-Hasklig nerd-fonts-otf nerd-fonts-symbols-ttf
